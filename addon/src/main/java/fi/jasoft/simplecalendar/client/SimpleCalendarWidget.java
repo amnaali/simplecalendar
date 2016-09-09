@@ -559,11 +559,12 @@ public class SimpleCalendarWidget extends FocusableFlowPanel implements ClickHan
         } else {
             if (dateIsSelected(date)) {
                 // Re-selection removes the selection
-                removeSelections();
+               // removeSelections();                
+               unselect(date, false);
 
             } else {
                 // remove previous selections
-                removeSelections();
+              //  removeSelections();
 
                 // Select date
                 select(date);
